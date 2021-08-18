@@ -1,0 +1,91 @@
+/* .display {
+    border: 10px solid black;
+} */
+
+.popUp {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    height: 800px;
+    max-height: 60%;
+}
+
+.popUp.active {
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.header {
+    padding: 10px;
+    font-size: 40px;
+}
+
+
+.author {
+    padding: 10px;
+
+}
+#author {
+    height: 30px;
+    font-size: 20px;
+}
+
+.title {
+    padding: 10px;
+}
+#title {
+    height: 30px;
+    font-size: 20px;
+}
+
+.pages {
+    padding: 10px;
+}
+#pages {
+    height: 30px;
+    font-size: 20px;
+}
+
+.read {
+    padding: 10px;
+}
+#read {
+    height: 30px;
+    font-size: 20px;
+}
+
+
+
+
+.submit {
+    padding: 10px;
+    
+}
+
+/* #subButton {
+    width: 100px;
+} */
+
+#overlay {
+    /* border: 2px solid red; */
+    position: fixed;
+    opacity: 0%;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+

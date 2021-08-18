@@ -9,13 +9,45 @@
 
     <body>
         <div class="add">
-            <button id="addButton">Add a Book</button>
+            <button data-modal-target="#pop" id="addButton">Add a Book</button>
 
         </div>
 
         <div class="display">
            
         </div>
+
+        
+        <form class="popUp" id="pop">
+            <div class="header">
+                Enter Book Details
+            </div>
+            <div class ="info">
+                <div class="title">
+                 <input type="text" id="title" placeholder="TITLE" required>
+                </div>
+                <div class="author">
+                 <input type="text" id="author" placeholder="AUTHOR" required>
+                </div>
+                <div class="pages">
+                 <input type="number" id="pages" placeholder="PAGES" required>
+                </div>
+                <div class="read">
+                    <input type ="text" id="read" placeholder="Have you read the book, y/n?" required>
+                </div>
+                
+                <div class="submit">
+                 <input data-close-button type="button" id="subButton" value="SUBMIT"> 
+                 <!-- type="submit" will not work -->
+                </div> 
+            </div>
+        </form>
+ 
+        <div id="overlay">
+ 
+        </div>
+ 
+        
     </body>
 
 </html>
